@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- name: Yagnik Virani
+     ID  : A00227162
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Radio group for radio button to provide choice to number of dice sides-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="164dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_second"
+        tools:ignore="MissingConstraints">
+
+        <!-- Radio button for number of dice sides equal to four-->
+        <RadioButton
+            android:id="@+id/sides_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 "
+            tools:ignore="InvalidId" />
+
+        <!-- Radio button for number of dice sides equal to six-->
+        <RadioButton
+            android:id="@+id/sides_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 " />
+
+        <!-- Radio button for number of dice sides equal to eight-->
+        <RadioButton
+            android:id="@+id/sides_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8 " />
+
+        <!-- Radio button for number of dice sides equal to ten-->
+        <RadioButton
+            android:id="@+id/sides_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10 " />
+
+        <!-- Radio button for number of dice sides equal to 12-->
+        <RadioButton
+            android:id="@+id/sides_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+        <!-- Radio button for number of dice sides equal to 20-->
+        <RadioButton
+            android:id="@+id/sides_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20" />
+
+    </RadioGroup>
+
+    <!-- button to roll a dice once-->
+    <Button
+        android:id="@+id/button_firsttime"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Roll dice once"
+        app:layout_constraintEnd_toStartOf="@+id/textView_first"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <!-- button to roll a dice twice-->
+    <Button
+        android:id="@+id/button_twice"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:text="Roll dice twice"
+        app:layout_constraintEnd_toStartOf="@+id/textView_second"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_firsttime"
+        tools:ignore="MissingConstraints"></Button>
+
+    <!-- textview to show a result of dice roll once-->
+    <TextView
+        android:id="@+id/textView_first"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <!-- textview to show a result of dice roll twice-->
+    <TextView
+        android:id="@+id/textView_second"
+        android:layout_width="128dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_first"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <!-- textview to show a message of user choice number of sides-->
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="188dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:background="#E3CDCD"
+        android:text="Enter number of sides:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <!-- button to roll a dice based on user choice-->
+    <Button
+        android:id="@+id/button_user"
+        android:layout_width="264dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:text="Roll dice based on your choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_userinput" />
+
+    <!-- textview to show a result of dice roll user choice-->
+    <TextView
+        android:id="@+id/textView_user_result"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_user" />
+
+    <!-- edittext to enter user choice to number of sides -->
+    <EditText
+        android:id="@+id/editText_userinput"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/textView_message"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+</android.support.constraint.ConstraintLayout>

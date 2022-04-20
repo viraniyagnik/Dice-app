@@ -6,7 +6,7 @@
 Mobile Application final exam
 
 Initially appeared on
-[Lab_6](https://github.com/viraniyagnik/Yagnik_final)
+[Yagnik_final_dice](https://github.com/viraniyagnik/Yagnik_final)
 
 
 
